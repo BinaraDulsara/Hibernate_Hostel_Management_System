@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.hostal_management_system.controller.LoginFormController">
+   <children>
+      <Text layoutX="489.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" wrappingWidth="157.57965087890625">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="txtUserName" layoutX="471.0" layoutY="148.0" prefHeight="31.0" prefWidth="192.0" promptText="Username">
+         <font>
+            <Font size="13.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtShowPassword" layoutX="471.0" layoutY="224.0" prefHeight="31.0" prefWidth="192.0" />
+      <JFXPasswordField fx:id="txtPassword" layoutX="471.0" layoutY="224.0" prefHeight="31.0" prefWidth="192.0" promptText="Password">
+         <font>
+            <Font size="13.0" />
+         </font></JFXPasswordField>
+      <ImageView fitHeight="17.0" fitWidth="14.0" layoutX="644.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="17.0" fitWidth="15.0" layoutX="645.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/view.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="404.0" fitWidth="330.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/80365.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnLogin" layoutX="489.0" layoutY="295.0" onAction="#btnLoginOnAction" prefHeight="31.0" prefWidth="158.0" style="-fx-background-color: #3c4c6f;" text="Sign In" textAlignment="CENTER" textFill="WHITE" />
+      <JFXButton layoutX="639.0" layoutY="226.0" onMousePressed="#EnterMouseOnAction" onMouseReleased="#ExitMouseOnAction" prefHeight="31.0" prefWidth="22.0" text=" " />
+   </children>
+</AnchorPane>

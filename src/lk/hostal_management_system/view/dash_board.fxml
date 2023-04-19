@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.hostal_management_system.controller.DashBoardController">
+   <children>
+      <AnchorPane layoutY="-2.0" prefHeight="407.0" prefWidth="153.0" style="-fx-background-color: #3c4c6f;">
+         <children>
+            <VBox layoutX="-6.0" layoutY="43.0" prefHeight="200.0" prefWidth="162.0">
+               <children>
+                  <JFXButton fx:id="btnDashBoard" alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#btnDashBoardOnAction" prefHeight="31.0" prefWidth="169.0" text="    Dash Board" textFill="#f2ebeb">
+                     <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/dashbord.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnRoom" alignment="BASELINE_LEFT" graphicTextGap="17.0" onAction="#btnRoomOnAction" prefHeight="31.0" prefWidth="167.0" text="Room" textAlignment="CENTER" textFill="#f8f8f8">
+                     <graphic>
+                        <ImageView fitHeight="14.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/bed.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></JFXButton>
+                  <JFXButton fx:id="btnStudent" alignment="BASELINE_LEFT" graphicTextGap="22.0" onAction="#btnRoomOnAction" prefHeight="31.0" prefWidth="165.0" text="Student" textFill="#ebebeb">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/graduate.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></JFXButton>
+                  <JFXButton fx:id="btnPlaceOrder" alignment="BASELINE_LEFT" graphicTextGap="22.0" onAction="#btnPlaceOrderOnAction" prefHeight="31.0" prefWidth="163.0" text="Place Order" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/today.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></JFXButton>
+               </children>
+            </VBox>
+            <JFXButton fx:id="btnSetting" layoutX="-1.0" layoutY="376.0" onAction="#btnSettingOnActive" prefHeight="31.0" prefWidth="80.0" text="Settings" textFill="#f8f8f8" />
+            <JFXButton fx:id="btnLogOut" layoutX="79.0" layoutY="376.0" onAction="#btnLogOutOnActive" prefHeight="31.0" prefWidth="80.0" text="Log Out" textFill="#f5f5f5" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="158.0" prefHeight="405.0" prefWidth="642.0">
+         <children>
+            <Pane layoutX="26.0" layoutY="37.0" prefHeight="84.0" prefWidth="282.0" style="-fx-background-color: white; -fx-background-radius: 15;">
+               <children>
+                  <Label layoutX="28.0" layoutY="14.0" text="Total Students" />
+                  <Label fx:id="lblTotalStudents" layoutX="41.0" layoutY="42.0" prefHeight="31.0" prefWidth="50.0" text="Label" />
+                  <ImageView fitHeight="55.0" fitWidth="50.0" layoutX="132.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="61.0" fitWidth="69.0" layoutX="177.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="61.0" fitWidth="64.0" layoutX="179.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/graduation.png" />
+                     </image></ImageView>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Pane>
+            <Pane layoutX="325.0" layoutY="37.0" prefHeight="84.0" prefWidth="298.0" style="-fx-background-color: white; -fx-background-radius: 15;">
+               <children>
+                  <Label layoutX="26.0" layoutY="14.0" text="Total Rooms" />
+                  <Label fx:id="lblTotalRooms" layoutX="43.0" layoutY="42.0" prefHeight="31.0" prefWidth="50.0" text="Label" />
+                  <ImageView fitHeight="61.0" fitWidth="69.0" layoutX="190.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/living-room.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Pane>
+            <Pane layoutX="328.0" layoutY="140.0" prefHeight="249.0" prefWidth="292.0" style="-fx-background-color: white; -fx-background-radius: 15;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <Label layoutX="35.0" layoutY="21.0" text="Time">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="35.0" layoutY="135.0" text="Date">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblTime" layoutX="38.0" layoutY="58.0" prefHeight="55.0" prefWidth="237.0" text="Label" />
+                  <Label fx:id="lblDate" layoutX="38.0" layoutY="169.0" prefHeight="55.0" prefWidth="237.0" text="Label" />
+               </children>
+            </Pane>
+            <Pane layoutX="29.0" layoutY="142.0" prefHeight="249.0" prefWidth="282.0" style="-fx-background-color: white; -fx-background-radius: 15;">
+               <children>
+                  <Label layoutX="28.0" layoutY="19.0" text="Payments" />
+                  <Label layoutX="41.0" layoutY="82.0" prefHeight="31.0" prefWidth="64.0" text="Not Paid " />
+                  <ImageView fitHeight="55.0" fitWidth="50.0" layoutX="132.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="61.0" fitWidth="69.0" layoutX="177.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="55.0" fitWidth="50.0" layoutX="193.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label layoutX="41.0" layoutY="159.0" prefHeight="31.0" prefWidth="64.0" text="Paid " />
+                  <Label fx:id="lblNotPaid" layoutX="117.0" layoutY="74.0" prefHeight="45.0" prefWidth="144.0" text="Label" />
+                  <Label fx:id="lblPaid" layoutX="119.0" layoutY="152.0" prefHeight="45.0" prefWidth="144.0" text="Label" />
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Pane>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
